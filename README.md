@@ -1,8 +1,22 @@
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=40&duration=4000&pause=1000&color=FFFFFF&background=00000000&center=true&vCenter=true&width=500&lines=Muse;Axis+CEO+%2F+Architect;SuperteamJP;Member" alt="Typing SVG" />
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=40&duration=4000&pause=1000&color=FFFFFF&background=00000000&center=true&vCenter=true&width=500&lines=Muse;Axis+CEO+%2F+Architect;SuperteamJP;Member"
+      />
+      <source
+        media="(prefers-color-scheme: light)"
+        srcset="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=40&duration=4000&pause=1000&color=000000&background=00000000&center=true&vCenter=true&width=500&lines=Muse;Axis+CEO+%2F+Architect;SuperteamJP;Member"
+      />
+      <img
+        src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=40&duration=4000&pause=1000&color=000000&background=00000000&center=true&vCenter=true&width=500&lines=Muse;Axis+CEO+%2F+Architect;SuperteamJP;Member"
+        alt="Typing SVG"
+      />
+    </picture>
   </a>
 </div>
+
 
 <div align="center">
   <img src="https://img.shields.io/badge/SOLANA-Mainnet-000000?style=for-the-badge&logo=solana&logoColor=9945FF" />
