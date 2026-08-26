@@ -1,6 +1,6 @@
 # 菊田 佑輔 / Yusuke Kikuta
 
-**Full-stack Engineer — TypeScript / AI Automation / Solana**
+**Full-stack Engineer - TypeScript / AI Automation / Solana**
 
 [Portfolio](https://yusuke-portfolio.yusukekikuta-05.workers.dev) · [Zenn](https://zenn.dev/yusukekikuta) · [LinkedIn](https://www.linkedin.com/in/yusukekikuta) · [X](https://x.com/muse_jp_sol) · [Email](mailto:yusukekikuta.05@gmail.com)
 
@@ -22,7 +22,7 @@
 
 TypeScriptを軸に、Frontend、Backend、API、DB、AI自動化、Solana連携まで横断して開発しています。要件整理から設計、実装、レビュー、リリースまで一気通貫で対応できます。
 
-> **業務委託のご相談を受付中です。** 週15〜20時間程度・フルリモートで参画可能です。
+> **業務委託のご相談を受付中です。** 週25時間程度・フルリモートで参画可能です。
 
 ### できること
 
@@ -45,7 +45,6 @@ TypeScriptを軸に、Frontend、Backend、API、DB、AI自動化、Solana連携
 ### 公開物
 
 - [Axis](https://axs.pizza/) — [Frontend / Backend repository](https://github.com/Axis-pizza/Axis_MVP) · [技術記事](https://zenn.dev/yusukekikuta/articles/04904b02dcadfb)
-- [ctsDAO](https://github.com/muse0509/ctsdao_lp) — Next.jsによるLanding Page / Intake System
 - [Axis AMM](https://github.com/Axis-pizza/Axis_AMM) — Solana Batch AuctionのProtocol R&D
 
 ご相談は [Email](mailto:yusukekikuta.05@gmail.com) または [LinkedIn](https://www.linkedin.com/in/yusukekikuta) からご連絡ください。
