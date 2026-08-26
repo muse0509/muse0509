@@ -1,28 +1,43 @@
 # GitHub Profile README 要件定義
 
+更新日: 2026-08-26  
+方針: Skills-first / Single README
+
 ## 1. 目的
 
-GitHubプロフィールを、装飾中心の自己紹介から、採用担当者・開発責任者・Founderが20〜30秒で以下を判断できる「受託用の技術プロフィール」へ再設計する。
+GitHubプロフィールを、作品や成果を並べるポートフォリオではなく、採用担当者・開発責任者・Founderが短時間で「この技術者に何を依頼できるか」を判断できる受託用プロフィールにする。
 
-- 誰で、どのようなエンジニアか
-- 何を依頼できるか
-- どのような成果を出したか
-- 技術と担当範囲を裏付ける公開コードがあるか
-- 現在相談可能か、どこから連絡できるか
+- TypeScriptを軸としたFull-stack開発力を最初に伝える
+- AI / RAG・業務自動化、Solana / Web3、Technical Leadの対応範囲を示す
+- 日本語話者と英語話者に同じ情報を一つのページで提供する
+- 稼働条件と問い合わせ先を迷わず確認できるようにする
 
 ## 2. 想定読者
 
 1. フリーランス / 業務委託エンジニアを探す採用担当者・EM・CTO
-2. 0→1開発、PoC、AI自動化、Solana連携を依頼したいFounder / PM
-3. 公開リポジトリや技術判断を確認したいエンジニア・OSS contributor
-4. 日本語話者を主対象としつつ、海外チーム・英語話者にも同じ情報を提供する
+2. 0→1開発、MVP、AI自動化、Solana連携を依頼したいFounder / PM
+3. 技術領域と公開コードを確認したいエンジニア
+4. 日本語話者を主対象としつつ、海外チーム・英語話者も対象とする
 
-## 3. 情報源と事実確認方針
+## 3. 今回の編集方針
 
-### 提供資料（非公開）
+前版のHero画像、言語切り替え画像、定量実績中心の構成は廃止する。
+
+| 項目 | 採用する仕様 |
+| --- | --- |
+| 言語 | 一つの`README.md`に日本語、その下に英語を掲載 |
+| First view | 氏名、肩書き、主要リンク、技術バッジ |
+| 主役 | 「できること」と技術スタック |
+| 実績 | 数値や受賞歴を強調せず、公開物を補助的な根拠として短く掲載 |
+| 見た目 | 画像を作らず、余白・短い文章・統一したflat-square badgeで落ち着かせる |
+| CTA | 日英それぞれに稼働条件とEmail / LinkedInを掲載 |
+
+## 4. 情報源と表現ルール
+
+### 提供資料
 
 - 2026-08-20時点の日本語職務経歴書
-- 日本語スキルマトリクス
+- 日本語スキルシート
 - 英語レジュメ
 
 ### 公開証拠
@@ -30,112 +45,76 @@ GitHubプロフィールを、装飾中心の自己紹介から、採用担当�
 - [Axis MVP](https://github.com/Axis-pizza/Axis_MVP)
 - [Axis AMM](https://github.com/Axis-pizza/Axis_AMM)
 - [ctsDAO Landing Page](https://github.com/muse0509/ctsdao_lp)
-- [Axis MCP](https://github.com/Axis-pizza/Axis_mcp)
-- `muse0509`が作成した公開Pull Requestとcommit履歴
+- [Zenn](https://zenn.dev/yusukekikuta)
 
 ### 表現ルール
 
-- 資料間で数値が異なるAxis実績は、保守的な丸め値「約400ユーザー / 2,100件超」を使う
-- Axisの利用実績には必ず`Devnet`と明記し、Mainnetの売上・TVLと誤認させない
-- クライアント案件は、公開許可が確認できない実装詳細・コード・内部構成を載せない
-- Rust / Pinocchioは主力言語と断定せず、公開リポジトリで確認できる`Program R&D / testing`の文脈で示す
-- 英語力は資格ではなく、技術MTG・要件調整・交渉・ピッチの対応経験として示す
+- 資料と公開情報で確認できる技術・担当範囲だけを記載する
+- クライアント案件の非公開情報、private repository、個人情報を載せない
+- Rust / Pinocchioは主力スキルのバッジにせず、公開物のProtocol R&Dとして扱う
+- 英語力は資格ではなく、技術調整への対応力として示す
 - 年齢、性別、住所、電話番号は掲載しない
 
-## 4. 調査したベストプラクティス
-
-調査日: 2026-08-26
+## 5. 参考にしたベストプラクティス
 
 | Source | 採用する示唆 |
 | --- | --- |
-| [GitHub Docs — Managing your profile README](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme) | ユーザー名と同名のpublic repository、rootの`README.md`を日本語の既定表示にする |
-| [GitHub Docs — Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#relative-links) | 日英READMEの相互移動にはbranchに追従するrelative linkを使う |
-| [Qiita — 5分でできる！GitHub README プロフィール](https://qiita.com/mmnn/items/cf465d271171cba8bd51) | シンプルさを保ち、スキルと活動を短時間で把握できる構成にする |
-| [Qiita — 未経験者が自社開発企業に就職するためのREADME書き方](https://qiita.com/teruis/items/64fcf585f02162fa2f3b) | 発注者がコードを細部まで読まない前提で、端的・視覚的に概要、技術、強みを伝える |
-| [Zenn — 読みたくなるREADMEを書くためのコツ](https://zenn.dev/bloomer/articles/3f73f7d02e5a63) | 読み手が知りたい順に、一言、視覚、URL、概要、技術を配置する |
-| [Zenn — README.md 日本語と英語の切り替えボタンの実装](https://zenn.dev/keitosuwahara/articles/2529e2685773ed) | `README.md`と別言語ファイルを相対リンクで相互遷移させる |
-| [Qiita — GitHubプロフィールREADMEを、オリジナルカードを追加する方法](https://qiita.com/0ts_st/items/c58dcefade70f0c4a024) | Profile READMEを第一印象を作る案内板として設計し、静的カードで世界観を伝える |
-| [Zenn — GitHubのプロフィールREADMEを作ってみた](https://zenn.dev/uya0526_design/articles/zenn_github-profile-readme) | 実務経験と学習中を分け、projectに技術・役割・証拠を付ける。外部Stats障害を重要導線に持ち込まない |
-| [Zenn — GitHub Actionsで安定したプロフィールREADMEを錬成してみた](https://zenn.dev/toramutton/articles/eb21f46932fd34) | 第三者の動的画像は表示不安定性と運用負荷があるため、Heroをrepository内の静的SVGにする |
-| [フリーランスエンジニアのGitHubアピール術](https://syusodo.co.jp/workee-freelance-blog/articles/freelance-engineer-github-for-jobs) | 一行自己紹介、直近実績、対応領域、稼働状況、連絡導線、NDA配慮を明示する |
+| [GitHub Docs — Managing your profile README](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme) | ユーザー名と同名のpublic repositoryのrootに`README.md`を置く |
+| [GitHub Docs — Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) | GitHub標準Markdownだけで、読みやすく保守しやすい構造にする |
+| [Qiita — 5分でできる！GitHub README プロフィール](https://qiita.com/mmnn/items/cf465d271171cba8bd51) | スキルと活動を短時間で把握できるシンプルな構成にする |
+| [Qiita — 未経験者が自社開発企業に就職するためのREADME書き方](https://qiita.com/teruis/items/64fcf585f02162fa2f3b) | コードを細部まで読まない読者にも概要、技術、強みを端的に伝える |
+| [Zenn — 読みたくなるREADMEを書くためのコツ](https://zenn.dev/bloomer/articles/3f73f7d02e5a63) | 読み手が知りたい順に、一言、URL、概要、技術を配置する |
+| [Zenn — GitHubのプロフィールREADMEを作ってみた](https://zenn.dev/uya0526_design/articles/zenn_github-profile-readme) | 技術領域を整理し、公開projectを根拠として添える |
 
-## 5. 機能要件
+## 6. 機能要件
 
 | ID | 要件 |
 | --- | --- |
-| FR-01 | `README.md`を日本語のprofile defaultとして表示する |
-| FR-02 | `README.en.md`に同一構造・同一事実の英語版を用意する |
-| FR-03 | 各READMEの最上部に日本語 / Englishの切り替え導線を置く |
-| FR-04 | First viewに氏名、肩書き、専門領域、案件相談CTA、主要連絡先を置く |
-| FR-05 | 約400 Devnet users、2,100+ baskets、400+ leads、5-person teamを一目で比較できる形にする |
-| FR-06 | 対応領域を発注単位で表現し、単なるtechnology badge一覧にしない |
-| FR-07 | Selected Workは役割、担当、成果、stack、evidence linkを同じ順序で示す |
-| FR-08 | Public workとNDA対象のclient workを明確に分ける |
-| FR-09 | 技術stackはArea、technology、実務用途の3列で示す |
-| FR-10 | Email、LinkedIn、X、Portfolioへのcontact routeを上部と末尾に置く |
+| FR-01 | rootの`README.md`だけで日英両方を読める |
+| FR-02 | 日本語を先に、区切り線の後に英語を掲載する |
+| FR-03 | 最上部に氏名、肩書き、主要リンク、技術バッジを置く |
+| FR-04 | バッジは主力技術に限定し、`flat-square`で統一する |
+| FR-05 | 対応領域をFull-stack、0→1 / MVP、AI / RAG、自動化、Solana、Technical Leadに整理する |
+| FR-06 | 技術スタックをFrontend、Backend / Data、AI / Automation、Solana / Web3、Cloud / Deliveryに分類する |
+| FR-07 | 公開物は技術力の根拠として3件程度を短く掲載する |
+| FR-08 | 稼働条件とEmail / LinkedInを日英それぞれに置く |
+| FR-09 | Hero、言語切り替え画像、local SVG asset、別言語READMEを使用しない |
+| FR-10 | 定量実績、受賞歴、長いproject case studyを主要コンテンツにしない |
 
-## 6. 情報設計
+## 7. 情報設計
 
-1. Language switch
-2. Static hero
-3. Name / positioning / primary links / availability CTA
-4. Quantified impact
-5. Profile summary
-6. What I can help with
-7. Selected public work
-8. Client work and NDA note
-9. Core stack with production context
-10. How I work
-11. Writing and recognition
-12. Contact CTA
+1. 氏名 / 英字名
+2. Positioning
+3. Portfolio / Zenn / LinkedIn / X / Email
+4. 技術バッジ
+5. 日本語: 概要 / 稼働条件 / できること / 技術スタック / 公開物 / Contact
+6. 区切り線
+7. English: Overview / Availability / Capabilities / Stack / Public Work / Contact
 
-## 7. ビジュアル要件
+## 8. ビジュアル要件
 
-- Tone: `dark editorial / quiet luxury`
-- Palette: Cinema Void `#020201`、warm ivory `#F6F0E7`、rose bronze `#C77D36`
-- Repository内の静的SVGを使用し、Heroの表示を外部サービスに依存させない
-- アニメーション、巨大ASCII art、大量のbadge / logo、trophy / snake / 3D graphを主要導線に使わない
-- 高級感を「少ない色、余白、整列、明確なhierarchy、定量証拠」で作る
-- GitHubが許可しないcustom CSSやJavaScriptを前提にしない
-- Heroとlanguage buttonにalt / titleを付ける
-- 1200px幅のHeroを`width="100%"`で表示し、mobileでも縮小可能にする
+- custom Hero、生成画像、言語切り替え画像を使わない
+- custom CSS、JavaScript、animationを前提にしない
+- 技術バッジはShields.ioの`flat-square`で統一する
+- GitHubのlight / dark themeの両方で本文が読める標準Markdownを使う
+- 高級感は装飾ではなく、情報量の抑制、余白、見出しの階層、表記の統一で作る
 
-## 8. 日英切り替え仕様
+## 9. 受入条件
 
-GitHub Profile READMEはsanitized static Markdownであり、JavaScriptによるin-place tab switchingやbrowser language detectionは実装できない。
+- [ ] `README.md`が日本語から始まり、その下に英語版がある
+- [ ] `README.en.md`とcustom SVG assetが存在しない
+- [ ] First viewで肩書き、主要技術、主要リンクを確認できる
+- [ ] 主力技術が統一されたバッジで表示される
+- [ ] 「できること」が日英で対応し、担当可能範囲を把握できる
+- [ ] 実績数値、受賞歴、長いcase studyが前面に出ていない
+- [ ] 公開物へのlinkが技術力の補助的な根拠として機能する
+- [ ] 稼働条件と問い合わせ先が日英で確認できる
+- [ ] local image参照や存在しないrelative linkがない
+- [ ] MarkdownがGitHub Flavored Markdownとしてparseできる
 
-- Japanese: `README.md`
-- English: `README.en.md`
-- 表示方法: repository内の静的SVG button + relative link
-- 日本語をdefault表示とし、英語版は1 clickで開く
-- 2ファイルのsection順、metrics、linksを同期する
+## 10. 運用
 
-## 9. 非機能要件
-
-- 外部のdynamic image APIが停止しても、氏名、肩書き、実績、contactが失われない
-- 公開情報のみで構成し、credentials、private repository、client sourceを含めない
-- Markdown / SVGはGitHubで安全にrenderできるsyntaxに限定する
-- 主要relative linkとasset pathが存在する
-- 日本語・英語で数値、role、project順、contactに不一致がない
-- README本文は発注者がskimmingできる見出しと短い段落を基本とする
-
-## 10. 受入条件
-
-- [ ] `README.md`が日本語で始まり、GitHub profileに表示できる
-- [ ] `README.en.md`との相互linkが機能する
-- [ ] First viewだけで「誰 / 何ができる / 相談可能 / contact」が分かる
-- [ ] Skillは用途つきで分類され、実績にはrole・impact・evidenceがある
-- [ ] Axis数値にDevnet表記があり、research repositoryにunaudited表記がある
-- [ ] Client workにNDA配慮がある
-- [ ] 全SVGがwell-formedで、light / dark themeの両方で読める固定dark cardとして表示される
-- [ ] 全local link / image pathが存在する
-- [ ] 外部URLの表記とmailtoが正しい
-- [ ] 日本語・英語のclaimsが同期している
-
-## 11. 運用
-
-- 稼働状況と日付は月1回、またはavailability変更時に更新する
-- 実績数値はsourceとenvironment（Devnet / Mainnet）を確認してから更新する
-- Projectを追加する場合は`Role / Work / Impact / Stack / Evidence`を揃える
-- 日本語・英語を同一Pull Requestで更新する
-- ProfileのPinned repositoriesは、READMEのSelected Workと合わせて定期的に見直す
+- 稼働条件が変わった場合は日本語・英語を同時に更新する
+- 主力技術が変わった場合だけbadgeとstack分類を見直す
+- 公開物は代表的な3件程度に絞り、増やしすぎない
+- 画像制作や複雑な自動生成処理を追加せず、README単体で保守する
